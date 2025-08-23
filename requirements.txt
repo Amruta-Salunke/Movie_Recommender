@@ -3,3 +3,4 @@ gdown
 pandas
 numpy
 scikit-learn
+request
