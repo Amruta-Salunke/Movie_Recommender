@@ -3,4 +3,3 @@ gdown
 pandas
 numpy
 scikit-learn
-streamlit-image-carousel
