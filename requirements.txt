@@ -3,4 +3,6 @@ gdown
 pandas
 numpy
 scikit-learn
-request
+requests
+streamlit-image-carousel
+
