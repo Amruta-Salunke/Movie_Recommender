@@ -6,7 +6,6 @@ import requests
 # similarity = pickle.load(open('similarity.pkl','rb'))
 
 import gdown
-import pickle
 
 
 
