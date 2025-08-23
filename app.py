@@ -2,11 +2,24 @@ import streamlit as st
 import pickle
 import requests
 
-movies = pickle.load(open('moives_list.pkl','rb'))
+#movies = pickle.load(open('moives_list.pkl','rb'))
 # similarity = pickle.load(open('similarity.pkl','rb'))
 
-#movies = pickle.load(open('movies_list.pkl','rb'))
-similarity = pickle.load(open('similarity.pkl','rb'))
+import gdown
+import pickle
+
+
+
+# Download files
+gdown.download(f"https://drive.google.com/uc?id=1z8Hk3B1BplBpPfVw8FlESgs14WsAP5kK", "movies_list.pkl", quiet=False)
+gdown.download(f"https://drive.google.com/uc?id=1gDEZFamsB19alNh8FAzZGnK1sRqbLCUb", "similarity.pkl", quiet=False)
+
+# https://drive.google.com/file/d/1z8Hk3B1BplBpPfVw8FlESgs14WsAP5kK/view?usp=sharing
+# https://drive.google.com/file/d/1gDEZFamsB19alNh8FAzZGnK1sRqbLCUb/view?usp=sharing
+
+# Load files
+movies = pickle.load(open("movies_list.pkl", "rb"))
+similarity = pickle.load(open("similarity.pkl", "rb"))
 
 movies_list=movies['title'].values
 
