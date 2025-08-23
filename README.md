@@ -29,6 +29,8 @@ movie-recommender-system/
 ├── movies_list.pkl       # Movie dataset (pickled DataFrame)
 
 ├── similarity.pkl        # Precomputed similarity matrix
+
 ├── requirements.txt      # Python dependencies
+
 └── README.md             # Project documentation
 
