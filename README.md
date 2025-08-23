@@ -23,8 +23,11 @@ Select your favorite movie and get 5 similar recommendations with posters in a c
 
 ## 📂 Project Structure
 movie-recommender-system/
+
 ├── app.py                # Main Streamlit app
+
 ├── movies_list.pkl       # Movie dataset (pickled DataFrame)
+
 ├── similarity.pkl        # Precomputed similarity matrix
 ├── requirements.txt      # Python dependencies
 └── README.md             # Project documentation
