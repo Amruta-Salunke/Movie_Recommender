@@ -31,30 +31,6 @@ movies_list=movies['title'].values
 st.header("Movie Recommender System")
 
 
-import streamlit.components.v1 as components
-
-imageCarouselComponent = components.declare_component("image-carousel-component", path="frontend/public")
-
-
-imageUrls = [
-    fetch_poster(1632),
-    fetch_poster(299536),
-    fetch_poster(17455),
-    fetch_poster(2830),
-    fetch_poster(429422),
-    fetch_poster(9722),
-    fetch_poster(13972),
-    fetch_poster(240),
-    fetch_poster(155),
-    fetch_poster(598),
-    fetch_poster(914),
-    fetch_poster(255709),
-    fetch_poster(572154)
-   
-    ]
-
-
-imageCarouselComponent(imageUrls=imageUrls, height=200)
 
 
 selectvalue = st.selectbox("Select movie from dropdown",movies_list)
