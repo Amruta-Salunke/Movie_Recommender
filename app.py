@@ -10,7 +10,7 @@ movies_list=movies['title'].values
 st.header("Movie Recommender System")
 selectvalue = st.selectbox("Select movie from dropdown",movies_list)
 
-def recommend(movies):
+def recommend(movie):
     index=movies[movies['title']==movie].index[0]
     distance = sorted(list(enumerate(similarity[index])), reverse=True, key=lambda vector:vector[1])
     recommend_movies=[]
