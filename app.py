@@ -1,11 +1,11 @@
 import streamlit as st
+import gdown
 import pickle
 import requests
 
 #movies = pickle.load(open('moives_list.pkl','rb'))
 # similarity = pickle.load(open('similarity.pkl','rb'))
 
-import gdown
 
 
 
