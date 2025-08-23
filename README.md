@@ -1,4 +1,4 @@
-![Capture1](https://github.com/user-attachments/assets/71acf68f-d524-4f3c-bbf4-72d6afa529b2)# 🎬 Movie Recommender System
+# 🎬 Movie Recommender System
 
 A **content-based movie recommendation system** built with **Streamlit** and **TMDB API**.  
 Select your favorite movie and get 5 similar recommendations with posters in a clean Netflix-style layout.  
