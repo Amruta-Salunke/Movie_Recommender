@@ -18,7 +18,9 @@ def fetch_poster(movie_id):
 
 # Download files
 gdown.download(f"https://drive.google.com/uc?id=1z8Hk3B1BplBpPfVw8FlESgs14WsAP5kK", "movies_list.pkl", quiet=False)
-gdown.download(f"https://drive.google.com/uc?id=1WOPRy1UUtCZzJ25bWptYZgiw0lknFxDC", "similarity.pkl", quiet=False,fuzzy=True)
+gdown.download(f"https://drive.google.com/uc?id=1svifK0FWlTWS7YCXtYkr5Ko9SJ3OHu82", "similarity.pkl", quiet=False,fuzzy=True)
+
+
 
 
 # Load files
