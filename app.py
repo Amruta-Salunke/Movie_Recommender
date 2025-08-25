@@ -16,42 +16,19 @@ def fetch_poster(movie_id):
 
 
 
-# # Download files
-# gdown.download(f"https://drive.google.com/uc?id=1z8Hk3B1BplBpPfVw8FlESgs14WsAP5kK", "movies_list.pkl", quiet=False)
-# gdown.download(f"https://drive.google.com/uc?id=1WOPRy1UUtCZzJ25bWptYZgiw0lknFxDC", "similarity.pkl", quiet=False,fuzzy=True)
+# Download files
+gdown.download(f"https://drive.google.com/uc?id=1z8Hk3B1BplBpPfVw8FlESgs14WsAP5kK", "movies_list.pkl", quiet=False)
+gdown.download(f"https://drive.google.com/uc?id=1WOPRy1UUtCZzJ25bWptYZgiw0lknFxDC", "similarity.pkl", quiet=False,fuzzy=True)
 
 
-# # Load files
-# movies = pickle.load(open("movies_list.pkl", "rb"))
-# similarity = pickle.load(open("similarity.pkl", "rb"))
+# Load files
+movies = pickle.load(open("movies_list.pkl", "rb"))
+similarity = pickle.load(open("similarity.pkl", "rb"))
 
-# movies_list=movies['title'].values
+movies_list=movies['title'].values
 
 
-def safe_download(url, output):
-    """Download file from Google Drive with fallback to local copy"""
-    if os.path.exists(output):
-        print(f"✅ Using existing file: {output}")
-        return
-    try:
-        print(f"⬇️ Downloading {output} ...")
-        gdown.download(url, output, quiet=False, fuzzy=True)
-    except Exception as e:
-        st.error(f"❌ Download failed for {output}: {e}")
-        raise
 
-# ---- Download files (only if not present locally) ----
-safe_download("https://drive.google.com/uc?id=1z8Hk3B1BplBpPfVw8FlESgs14WsAP5kK", "movies_list.pkl")
-safe_download("https://drive.google.com/uc?id=1WOPRy1UUtCZzJ25bWptYZgiw0lknFxDC", "similarity.pkl")
-
-# ---- Load files ----
-with open("movies_list.pkl", "rb") as f:
-    movies = pickle.load(f)
-
-with open("similarity.pkl", "rb") as f:
-    similarity = pickle.load(f)
-
-movies_list = movies['title'].values
 st.header("Movie Recommender System")
 
 
