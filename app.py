@@ -16,20 +16,20 @@ def fetch_poster(movie_id):
 
 
 # Download files
-#gdown.download(f"https://drive.google.com/uc?id=1z8Hk3B1BplBpPfVw8FlESgs14WsAP5kK", "movies_list.pkl", quiet=False)
-#gdown.download(f"https://drive.google.com/uc?id=1L_A9IeVb5O0F0Pzvrujsev4vzFPexv2i", "similarity.pkl", quiet=False)
+gdown.download(f"https://drive.google.com/uc?id=1z8Hk3B1BplBpPfVw8FlESgs14WsAP5kK", "movies_list.pkl", quiet=False)
+gdown.download(f"https://drive.google.com/uc?id=1svifK0FWlTWS7YCXtYkr5Ko9SJ3OHu82", "similarity.pkl", quiet=False)
 
-import urllib.request
+# import urllib.request
 
-url = "https://drive.usercontent.google.com/download?id=1L_A9IeVb5O0F0Pzvrujsev4vzFPexv2i&export=download"
-urllib.request.urlretrieve(url, "similarity.pkl")
+# url = "https://drive.usercontent.google.com/download?id=1L_A9IeVb5O0F0Pzvrujsev4vzFPexv2i&export=download"
+# urllib.request.urlretrieve(url, "similarity.pkl")
 
 
 
 # https://drive.google.com/file/d/1z8Hk3B1BplBpPfVw8FlESgs14WsAP5kK/view?usp=sharing
 # https://drive.google.com/file/d/1gDEZFamsB19alNh8FAzZGnK1sRqbLCUb/view?usp=sharing
 #https://drive.google.com/file/d/1L_A9IeVb5O0F0Pzvrujsev4vzFPexv2i/view?usp=sharing
-
+# https://drive.google.com/file/d/1svifK0FWlTWS7YCXtYkr5Ko9SJ3OHu82/view?usp=drive_link
 # Load files
 movies = pickle.load(open("movies_list.pkl", "rb"))
 similarity = pickle.load(open("similarity.pkl", "rb"))
