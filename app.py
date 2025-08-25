@@ -17,12 +17,8 @@ def fetch_poster(movie_id):
 
 # Download files
 gdown.download(f"https://drive.google.com/uc?id=1z8Hk3B1BplBpPfVw8FlESgs14WsAP5kK", "movies_list.pkl", quiet=False)
-gdown.download(f"https://drive.google.com/uc?id=1svifK0FWlTWS7YCXtYkr5Ko9SJ3OHu82", "similarity.pkl", quiet=False)
+gdown.download(f"https://drive.google.com/uc?id=1svifK0FWlTWS7YCXtYkr5Ko9SJ3OHu82", "similarity.pkl", quiet=False,fuzzy=True)
 
-# import urllib.request
-
-# url = "https://drive.usercontent.google.com/download?id=1L_A9IeVb5O0F0Pzvrujsev4vzFPexv2i&export=download"
-# urllib.request.urlretrieve(url, "similarity.pkl")
 
 
 
@@ -32,6 +28,8 @@ gdown.download(f"https://drive.google.com/uc?id=1svifK0FWlTWS7YCXtYkr5Ko9SJ3OHu8
 # https://drive.google.com/file/d/1svifK0FWlTWS7YCXtYkr5Ko9SJ3OHu82/view?usp=drive_link
 
 # https://drive.google.com/file/d/1z8Hk3B1BplBpPfVw8FlESgs14WsAP5kK/view?usp=drive_link
+
+
 # Load files
 movies = pickle.load(open("movies_list.pkl", "rb"))
 similarity = pickle.load(open("similarity.pkl", "rb"))
