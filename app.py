@@ -19,9 +19,11 @@ def fetch_poster(movie_id):
 gdown.download(f"https://drive.google.com/uc?id=1z8Hk3B1BplBpPfVw8FlESgs14WsAP5kK", "movies_list.pkl", quiet=False)
 #gdown.download(f"https://drive.google.com/uc?id=1L_A9IeVb5O0F0Pzvrujsev4vzFPexv2i", "similarity.pkl", quiet=False)
 
-url = "https://drive.google.com/uc?id=1L_A9IeVb5O0F0Pzvrujsev4vzFPexv2i"
-output = "similarity.pkl"
-gdown.download(url, output, quiet=False)
+import urllib.request
+
+url = "https://drive.usercontent.google.com/download?id=1L_A9IeVb5O0F0Pzvrujsev4vzFPexv2i&export=download"
+urllib.request.urlretrieve(url, "similarity.pkl")
+
 
 
 # https://drive.google.com/file/d/1z8Hk3B1BplBpPfVw8FlESgs14WsAP5kK/view?usp=sharing
